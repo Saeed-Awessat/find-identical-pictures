@@ -1,0 +1,19 @@
+<section *ngIf="status; else noStatus">
+  <h2>Time: {{status.Time}}</h2>
+
+  <h2>Moves: {{status.Moves}}</h2>
+
+  <h2>Finish the game in : {{status.FinishTime}}</h2>
+
+</section>
+
+<ng-template #noStatus>
+  <h2>Status Doesn't exist!</h2>
+</ng-template>
+
+<br/>
+<br/>
+
+<h2>
+  <a routerLink="/gameStatus">Back to List</a>
+</h2>

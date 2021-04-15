@@ -1,0 +1,36 @@
+<br>
+<br>
+<br>
+
+<section>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Moves</th>
+                    <th>Time to finish</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+
+
+    <div class="tbl-content">
+        <table id="gameStatus" border="1" align="center">
+
+            <tr *ngFor="let gs of theGame">
+                <td>
+                    <a [routerLink]="gs._id">{{gs.Time}}</a>
+                </td>
+                <td>{{gs.Moves }}</td>
+                <td>{{gs.FinishTime}}</td>
+
+                
+
+            </tr>
+        </table>
+    </div>
+
+</section>

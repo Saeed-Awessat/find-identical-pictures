@@ -1,0 +1,8 @@
+<div class="card" [class.flipped]="card.flipped" (click)="memory.flipCard(card)">
+    <div class="back" [innerHtml]="card.template | sanitizeHtml:'displayed'">
+    </div>
+    <div class="front">
+        <div class="front-inner" [innerHtml]="memory.defaultTemplate  | sanitizeHtml">
+        </div>
+    </div>
+</div>

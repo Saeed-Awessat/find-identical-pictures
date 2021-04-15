@@ -1,0 +1,41 @@
+
+div {
+    box-sizing: border-box; /* The width and the height includes the padding and the border */
+    padding: 0 0 50px 0;
+    min-height: 100%;
+    position: relative;
+    text-align: center;
+    border: 2px solid black;
+
+    background: url(../assets/images/cover-page.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+main{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    height: 60px;
+    padding: 20px 70px;
+    background: #eee url(../assets/images/header-background.png);
+    /* line-height: 100px; */
+    border-bottom: 2px solid black;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* border-top: 2px solid black; */
+    background: rgba(22,22,22, 0.5);
+    color: rgb(242, 255, 65);
+}

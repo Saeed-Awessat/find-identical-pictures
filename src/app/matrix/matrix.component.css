@@ -1,0 +1,42 @@
+.theGame{
+    /* padding: 5px; */
+    background: url(../../assets/images/home_page.jpg);
+    margin-bottom: 30px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    z-index: 104;
+    flex: 1;
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 480px;
+    max-height: calc(100% - 150px);
+  }
+  
+  
+  
+
+
+  .gameStatus {
+    margin: 0px;
+    padding: 5px; 
+    border-radius: 10px;
+    /* background: rgba(22,22,22, 0.5); */
+    color: rgb(237, 250, 58);
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 800px) {
+    .restart {
+        font-size: 90%;
+    }
+}
+
+  

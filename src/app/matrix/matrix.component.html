@@ -1,0 +1,9 @@
+<div class="gameStatus">
+    <br>
+    {{gameStatusMessage}}
+</div>
+<div class="theGame">
+    <div class="board">
+        <app-card *ngFor="let card of memory.cards"  [card]="card" (click)="addStatus()"></app-card>
+    </div>
+</div>

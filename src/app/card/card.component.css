@@ -1,0 +1,61 @@
+
+.card , img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    position: relative;
+}
+
+.front , .back{
+    background-color: #FCFBE5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    box-shadow:  0 0 5px #38393B;
+    backface-visibility: hidden;
+    z-index: 2;
+    transition: all .35s linear;
+
+}
+.front:hover, .back:hover{
+    box-shadow:  0 0 15px #fff2ba;
+  }
+
+
+  .front{
+  color: #FCFBE5;
+  transform: perspective(600px) rotateY(0deg);
+  position: relative;
+   
+    
+}
+.front-inner{
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    top: 2px;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: ghostwhite;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ9J23mJeFFqEIf9bAqdXXM0Zu5YlmPLLzP4E8NUKs83DMnxuL);
+}
+
+.back,img{
+  color: #9C1C11;
+  transform: perspective(700px) rotateY(-180deg);
+}
+
+.flipped .front{
+    transform: rotateY(-180deg);
+}
+.flipped .back{
+    transform: rotateY(0deg);
+}
+

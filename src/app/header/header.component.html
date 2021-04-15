@@ -1,0 +1,7 @@
+<a  id="logo">Memory Game</a>
+<ul id="menu">
+    <li><a routerLink="/home" routerLinkActive="active-link"><span>The game</span></a></li>
+    <li><a routerLink="/gameStatus" routerLinkActive="active-link"><span>History</span></a></li>
+</ul>
+
+<a routerLink="/home" routerLinkActive="active-link" class="restart" (click)="memory.newGame()">Play again</a>
